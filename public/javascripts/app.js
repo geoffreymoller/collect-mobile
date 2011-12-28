@@ -32,6 +32,7 @@ collect.mobile.prototype.main = function(data){
           var list = new Ext.List({
               fullscreen: true,
               itemTpl : '<a href="{value.uri}" target="_blank">{value.title}</a>',
+              margin: '48 0 0 0',
               store: store
           });
 
