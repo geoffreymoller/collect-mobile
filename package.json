@@ -4,6 +4,8 @@
   , "private": true
   , "dependencies": {
       "express": "2.4.3"
+    , "connect-gzip": "0.1.5"
+    , "connect-assetmanager": ">= 0.0.24"
     , "jade": ">= 0.0.1"
   }
 }
