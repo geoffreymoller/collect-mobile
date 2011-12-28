@@ -3,9 +3,13 @@
  * Module dependencies.
  */
 
-var express = require('express');
+var express = require('express'),
+  gzip = require('connect-gzip'),
+  assetManager = require('connect-assetmanager')
 
-var app = module.exports = express.createServer();
+var app = module.exports = express.createServer(
+  gzip.gzip({ flags: '--best' })
+);
 
 // Configuration
 
